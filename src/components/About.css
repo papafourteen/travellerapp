@@ -1,0 +1,56 @@
+/* About.css */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100vw;
+    margin:60px auto 0 auto;
+  position: relative;
+  
+  }
+  .about-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(50px);
+    background: inherit; /* A háttérszín megegyezik a konténer háttérszínével */
+    z-index: -1; /* Elhelyezi a háttérblur alá */
+  }
+  .holder{
+    background-color:green;
+    padding: 1rem;
+    text-align: justify;
+    margin: 1rem;
+    border-radius: 15px;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px; /* Állítsd be a maximális szélességet az igényeid szerint */
+    margin: 20px 0;
+   
+  }
+  
+  .about-section img {
+    max-width: 40%; /* Állítsd be a maximális képszélességet az igényeid szerint */
+    border-radius: 8px;
+  }
+  
+  .about-section p {
+    max-width: 55%; /* Állítsd be a maximális szövegszélességet az igényeid szerint */
+    text-indent: 15px;
+  }
+  @media (max-width:700px){
+    .about-section{
+      flex-direction: column;
+    }
+  }
+  

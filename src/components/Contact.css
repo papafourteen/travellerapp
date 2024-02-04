@@ -1,0 +1,69 @@
+/* ContactForm.css */
+.contact{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+width: 100vw;
+position: relative;
+
+}
+.contact::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+backdrop-filter: blur(50px);
+background: inherit; /* A háttérszín megegyezik a konténer háttérszínével */
+z-index: -1; /* Elhelyezi a háttérblur alá */
+}
+ .contact h3 {
+    text-align: center;
+    
+  }
+  
+ .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+  textarea{
+    min-height: 200px;
+  }
+ .contact button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ .contact button:hover {
+    background-color: #45a049;
+  }
+  .contact-holder {
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;     
+    background-color: aliceblue;
+   padding: 2rem;
+    
+  }

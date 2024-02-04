@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.active {
+  border-bottom:0.5px dotted white;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff8a00, #025b33);
+  -webkit-background-clip: text;/* régebbi böngészőben is működjön*/
+  background-clip: text;/* biztosítja, hogy a háttérszínek csak a szöveg területén jelenjenek meg.*/
+  color: transparent;/*átlátszóvá teszi a szöveget, így a háttér színei jelennek meg a szöveg helyén.*/
+}
+.bg-gradient{
+  background: linear-gradient(45deg, #ff8a00, #025b33);
+}
+
+.content{
+  min-height: calc(100vh - 50px);
+  width: 100vw;
+}
+.footer {
+  background-color: rgba(51, 51, 51,0.6);
+  color: white;
+  text-align: center;
+  padding: 10px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+  width: 100%;
+
+  position: relative;
+left: 0;
+bottom:0;
+
+}
+@media (max-width:550px){
+  .home h1{
+  font-size: 2rem;
+}
+}
+
